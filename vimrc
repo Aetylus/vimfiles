@@ -40,8 +40,12 @@ let g:airline#extensions#tabline#fnamemod = ':t'
 set laststatus=2
 
 " Editor Settings
+if has("gui_running")
+   colorscheme solarized
+else
+   colorscheme base16-default-dark
+endif
 syntax enable
-colorscheme solarized
 set background=dark
 "set guifont=Consolas:h11:cANSI:qDRAFT
 set guifont=DejaVu_Sans_Mono:h9:cANSI:qDRAFT
