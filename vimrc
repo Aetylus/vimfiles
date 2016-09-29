@@ -64,3 +64,6 @@ nmap <Leader>p :CtrlP<CR>
 nmap <Leader>bb :CtrlPBuffer<CR>
 nmap <Leader>bm :CtrlPMixed<CR>
 nmap <Leader>bs :CtrlPPMRU<CR>
+
+" Commands
+command Scratch call myfunctions#Scratch()
