@@ -66,4 +66,4 @@ nmap <Leader>bm :CtrlPMixed<CR>
 nmap <Leader>bs :CtrlPPMRU<CR>
 
 " Commands
-command Scratch call myfunctions#Scratch()
+command! Scratch call myfunctions#Scratch()
