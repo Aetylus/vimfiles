@@ -10,7 +10,7 @@ source $VIMRUNTIME/gvimrc_example.vim
 behave mswin
 
 " Airline
-let g:airline_powerline_fonts = 1
+" let g:airline_powerline_fonts = 1
 let g:airline#extensions#tabline#enabled = 1
 let g:airline#extensions#tabline#buffer_nr_show = 1
 let g:airline#extensions#tabline#fnamemod = ':t'
@@ -25,7 +25,8 @@ else
 endif
 syntax enable
 set background=dark
-set guifont=DejaVu_Sans_Mono_for_Powerline:h10:cANSI:qDRAFT,DejaVu_Sans_Mono:h10:cANSI:qDRAFT
+" set guifont=DejaVu_Sans_Mono_for_Powerline:h10:cANSI:qDRAFT,DejaVu_Sans_Mono:h10:cANSI:qDRAFT
+set guifont=Consolas:h10:cANSI:qDRAFT
 set encoding=utf-8
 
 set guioptions-=T
