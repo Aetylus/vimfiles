@@ -25,3 +25,6 @@
 [submodule "bundle/sqlldr.vim"]
 	path = bundle/sqlldr.vim
 	url = https://github.com/vim-scripts/sqlldr.vim
+[submodule "bundle/vim-easy-align"]
+	path = bundle/vim-easy-align
+	url = https://github.com/junegunn/vim-easy-align
