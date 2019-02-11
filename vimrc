@@ -9,6 +9,13 @@ source $VIMRUNTIME/mswin.vim
 source $VIMRUNTIME/gvimrc_example.vim
 behave mswin
 
+" fzf Settings
+set rtp+=D:\fzf
+
+autocmd! FileType fzf
+autocmd  FileType fzf set laststatus=0 noshowmode noruler
+  \| autocmd BufLeave <buffer> set laststatus=2 showmode ruler
+
 " Airline
 " let g:airline_powerline_fonts = 1
 let g:airline#extensions#tabline#enabled = 1
