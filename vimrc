@@ -66,6 +66,7 @@ autocmd BufNewFile,BufRead *.ftl,*ftlh setfiletype ftl
 autocmd BufNewFile,BufRead *.pc setfiletype c
 
 " Mappings
+nmap <C-Y> <C-Y>
 nmap <C-PageUp> :bp<CR>
 nmap <C-PageDown> :bn<CR>
 nmap <Leader><C-W> :bd!<CR>
