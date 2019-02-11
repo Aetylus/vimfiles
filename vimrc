@@ -28,7 +28,7 @@ set noshowmode
 
 " Editor Settings
 if has("gui_running")
-   colorscheme solarized
+   colorscheme base16-material
 else
    colorscheme base16-default-dark
 endif
