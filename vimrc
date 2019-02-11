@@ -60,6 +60,11 @@ set autoread
 
 let &colorcolumn="81,".join(range(121,999),",")
 
+" Syntax
+autocmd BufNewFile,BufRead *.ctl setfiletype sqlldr
+autocmd BufNewFile,BufRead *.ftl,*ftlh setfiletype ftl
+autocmd BufNewFile,BufRead *.pc setfiletype c
+
 " Mappings
 nmap <C-PageUp> :bp<CR>
 nmap <C-PageDown> :bn<CR>
