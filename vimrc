@@ -17,7 +17,9 @@ autocmd  FileType fzf set laststatus=0 noshowmode noruler
   \| autocmd BufLeave <buffer> set laststatus=2 showmode ruler
 
 " Airline
-" let g:airline_powerline_fonts = 1
+if has("gui_running")
+   let g:airline_powerline_fonts = 1
+endif
 let g:airline#extensions#tabline#enabled = 1
 let g:airline#extensions#tabline#buffer_nr_show = 1
 let g:airline#extensions#tabline#fnamemod = ':t'
@@ -32,8 +34,7 @@ else
 endif
 syntax enable
 set background=dark
-" set guifont=DejaVu_Sans_Mono_for_Powerline:h10:cANSI:qDRAFT,DejaVu_Sans_Mono:h10:cANSI:qDRAFT
-set guifont=DejaVu_Sans_Mono:h10:cANSI:qDRAFT
+set guifont=DejaVu_Sans_Mono_for_Powerline:h10:cANSI:qDRAFT,DejaVu_Sans_Mono:h10:cANSI:qDRAFT
 set encoding=utf-8
 
 set guioptions-=T
