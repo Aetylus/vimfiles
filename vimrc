@@ -76,7 +76,8 @@ nmap <Leader>o :browse e<CR>
 nmap <Leader>S :browse w<CR>
 
 nmap <Leader>p :CtrlP<CR>
-nmap <Leader>bb :CtrlPBuffer<CR>
+" nmap <Leader>bb :CtrlPBuffer<CR>
+nmap <Leader>bb :Buffers<CR>
 nmap <Leader>bm :CtrlPMixed<CR>
 nmap <Leader>bs :CtrlPPMRU<CR>
 
