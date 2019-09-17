@@ -34,3 +34,6 @@
 [submodule "bundle/ftl-vim-syntax"]
 	path = bundle/ftl-vim-syntax
 	url = https://github.com/Aetylus/ftl-vim-syntax.git
+[submodule "bundle/nginx.vim"]
+	path = bundle/nginx.vim
+	url = https://github.com/chr4/nginx.vim
