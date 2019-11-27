@@ -9,6 +9,21 @@ source $VIMRUNTIME/mswin.vim
 source $VIMRUNTIME/gvimrc_example.vim
 behave mswin
 
+" ConEmu
+let conemu_ansi=$ConEmuANSI
+if conemu_ansi == "ON"
+   let g:airline_powerline_fonts = 0
+   set term=xterm
+   set t_Co=256
+   let &t_AB="\e[48;5;%dm"
+   let &t_AF="\e[38;5;%dm"
+   " inoremap <Char-0x07F> <BS>
+   " nnoremap <Char-0x07F> <BS>
+   " Backspace fix from https://github.com/Maximus5/ConEmu/issues/1900
+   let &t_kb="\xcex"
+   set mouse=a
+endif
+
 " fzf Settings
 set rtp+=D:\fzf
 
