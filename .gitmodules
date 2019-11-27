@@ -30,7 +30,7 @@
 	url = https://github.com/junegunn/vim-easy-align
 [submodule "bundle/fzf.vim"]
 	path = bundle/fzf.vim
-	url = https://github.com/junegunn/fzf.vim
+	url = git@github.com:junegunn/fzf.vim.git
 [submodule "bundle/ftl-vim-syntax"]
 	path = bundle/ftl-vim-syntax
 	url = https://github.com/Aetylus/ftl-vim-syntax.git
