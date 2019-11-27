@@ -42,11 +42,13 @@ set laststatus=2
 set noshowmode
 
 " Editor Settings
-if has("gui_running")
-   colorscheme base16-material
-else
-   colorscheme base16-default-dark
-endif
+" if has("gui_running")
+"    colorscheme base16-material
+" else
+"    colorscheme base16-default-dark
+" endif
+colorscheme base16-material
+set termguicolors
 syntax enable
 set background=dark
 set guifont=DejaVu_Sans_Mono_for_Powerline:h10:cANSI:qDRAFT,DejaVu_Sans_Mono:h10:cANSI:qDRAFT
