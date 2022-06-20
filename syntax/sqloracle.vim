@@ -18,8 +18,10 @@ syn keyword sqlSpecial	false null true
 
 syn keyword sqlKeyword	access add as asc begin by case check cluster column
 syn keyword sqlKeyword	cache compress connect current cursor decimal default desc
-syn keyword sqlKeyword	else elsif end exception exclusive file for from
-syn keyword sqlKeyword	function group having identified if immediate increment
+" syn keyword sqlKeyword	else elsif end exception exclusive file for from
+syn keyword sqlKeyword	else elsif exception exclusive file for from
+" syn keyword sqlKeyword	function group having identified if immediate increment
+syn keyword sqlKeyword	function group having identified immediate increment
 syn keyword sqlKeyword	index initial initrans into is level link logging loop
 syn keyword sqlKeyword	maxextents maxtrans mode modify monitoring
 syn keyword sqlKeyword	nocache nocompress nologging noparallel nowait of offline on online start
@@ -31,6 +33,10 @@ syn keyword sqlKeyword	session share size smallint type using
 " Added by Jure Jumalon
 syn keyword sqlKeyword	left right inner cross join pivot unpivot over partition when rollup cube
 syn keyword sqlKeyword  declare open fetch close
+syn keyword sqlKeyword  lead
+syn keyword sqlKeyword	if end
+" syn keyword sqlKeyword	end if fi contained
+" syn keyword sqlContainedKeyword	if end contained
 
 syn keyword sqlOperator	not and or
 syn keyword sqlOperator	in any some all between exists
@@ -65,6 +71,9 @@ syn match sqlComment	"--.*$" contains=sqlTodo,@Spell
 " the keywords create/update/alter/select/insert need to
 " have contained option.
 syn region sqlFold start='^\s*\zs\c\(Create\|Update\|Alter\|Select\|Insert\)' end=';$\|^$' transparent fold contains=ALL
+" syn region sqlFold start='\c\(\<end\>\s\+\)\@<!\<if\>' end=/end/ transparent fold contains=ALL
+" syn region sqlFold start=/\<if\>$/ end=/^\s*end\s*$/ matchgroup=sqlKeyword transparent fold contains=ALL
+" syn region sqlFold start="\<if\_s" matchgroup=shConditional skip=+-fi\>+ end="\<;\_s*then\>" end="\<fi\>"	contains=@shIfList
 
 syn sync ccomment sqlComment
 
