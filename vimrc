@@ -9,6 +9,14 @@ source $VIMRUNTIME/mswin.vim
 source $VIMRUNTIME/gvimrc_example.vim
 behave mswin
 
+" Terminal WSL Settings
+" if has("windows")
+"    set shell=ubuntu.exe
+"    set shellpipe=|
+"    set shellredir=>
+"    set shellcmdflag=
+" endif
+
 " ConEmu
 let conemu_ansi=$ConEmuANSI
 if conemu_ansi == "ON"
